@@ -63,8 +63,9 @@ function mktclear2(pi::Any,guesstheta::Any)
     return y
 end 
 
+## Testing these functions gives us the same values as found in the matlab version.
 """
-   Now that the functions are generated, we will define the parameters of interest. 
+   Now that the functions are generated , we will define the parameters of interest. 
 
 """
 global qH, qL, cH, cL, A, B, C, D, E, F, lambda, lambdahat, Delta  
@@ -99,7 +100,7 @@ pis = LinRange(0.00001,.99999,N)
 N2 = 1000
 
 # Plot density
-
+thetas= zeros(N2)
 thetas = LinRange(0,lambda,N2)
 plot(thetas,f(thetas))
 xlabel("\theta")
@@ -139,14 +140,14 @@ end
 thetasdev[1,:]=range(thetastar[1],lambda,length=N)
 thetasdev[2,:]=range(thetastar[2],lambda,length=N)
 
-profits[1,:] = ((lambda - thetasdev[1,:])*qL + pistar[1]*(1-lambda)*qH)./ (lambda - thetasdev[1,:] + pistar[1]*(1-lambda))-wstar
+profits[1,:] = ((lambda - thetasdev[1,:])*qL + pistar[1]*(1-lambda)*qH)./ (lambda - thetasdev[1,:] + pistar[1]*(1-lambda)) .-wstar
 
-profits[2,:] = ((lambda - thetasdev[2,:])*qL + pistar[2]*(1-lambda)*qH)./ (lambda - thetasdev[2,:] + pistar[2]*(1-lambda))-wstar
+profits[2,:] = ((lambda - thetasdev[2,:])*qL + pistar[2]*(1-lambda)*qH)./ (lambda - thetasdev[2,:] + pistar[2]*(1-lambda)) .-wstar
 
 for j = 1:N
 
-    a= quadgk[ 1 ./(pistar[1]*(1-lambda)+lambda-t).*f(t),thetastar[1],thetasdev[1,j]]
-    b= quadgk[ 1 ./(pistar[2]*(1-lambda)+lambda-t).*f(t),thetastar[2],thetasdev[2,j]]
+    a= quadgk[ 1 ./ (pistar[1]*(1-lambda)+lambda-t) .*f(t),thetastar[1],thetasdev[1,j]]
+    b= quadgk[ 1 ./(pistar[2]*(1-lambda)+lambda-t) .*f(t),thetastar[2],thetasdev[2,j]]
 
     wD[1,j] = qL + (qH - qL) * (1-cH/cL * a[1]) 
 
