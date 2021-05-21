@@ -2,7 +2,7 @@ module SignalingToExperts
 
 export errmktclear, equil, f, indif, mktclear2
 
-#This file create the numerical simulation used to generate figure 6
+#This file create the numerical simulations used to generate figure 6
 
 """
     We will use the following packages for our replication study
