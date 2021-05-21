@@ -24,6 +24,6 @@ In your julia REPL type
 ] add https://github.com/fatimelbah/SignalingToExperts.jl.git
 ```
 
-## Showcase
+## References
 
 This package replicate the main functions of the paper and try to generate the main figures displayed in the paper and its *[Online Appendix](https://zenodo.org/record/4004262#.YKfP4JMzbQ0)*
