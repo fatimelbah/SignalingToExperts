@@ -16,7 +16,7 @@ GitHub Actions : [![Build Status](https://github.com/fatimelbah/SignalingToExper
 
 This package provides a `Julia` infrastructure to replicate the paper *[Signaling to Experts](https://www.nber.org/system/files/working_papers/w23817/w23817.pdf)* by Kurlat & Scheuer (2017).
 
-## Installation
+## Installation Instructions
 
 In your julia REPL type
 
@@ -24,6 +24,6 @@ In your julia REPL type
 ] add https://github.com/fatimelbah/SignalingToExperts.jl.git
 ```
 
-## References
+## Showcase
 
-This package replicate the main functions of the paper and try to generate the main figures displayed in the paper and its *[Online Appendix](https://zenodo.org/record/4004262#.YKfP4JMzbQ0)*
+This package replicate numerical simulations done in the paper and try to generate the figures presented in the paper and its *[Online Appendix](https://zenodo.org/record/4004262#.YKfP4JMzbQ0)*
