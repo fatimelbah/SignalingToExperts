@@ -1,11 +1,11 @@
 # Computational Economics : Final Project 
 
-### Group : Fatimetou El Bah, Veronika Micudova
+### Group : Fatimetou El Bah and Veronika Micudova
 
 ### Paper : Signaling to Experts (Pablo Kurlat and Florian Scheuer, 2017)
 
 
-<!-- [![](https://img.shields.io/badge/docs-stable-blue.svg)](https://fatimetlbah.github.io/SignalingToExperts.jl/stable) -->
+<!-- [![](https://img.shields.io/badge/docs-stable-blue.svg)](https://fatimelbah.github.io/SignalingToExperts.jl/stable) -->
 [![](https://img.shields.io/badge/docs-dev-blue.svg)](https://fatimelbah.github.io/SignalingToExperts.jl/dev)
 
 GitHub Actions : [![Build Status](https://github.com/fatimelbah/SignalingToExperts.jl/workflows/CI/badge.svg)](https://github.com/fatimelbah/SignalingToExperts.jl/actions?query=workflow%3ACI+branch%3Amaster)
@@ -21,7 +21,7 @@ This package provides a `Julia` infrastructure to replicate the paper *[Signalin
 In your julia REPL type
 
 ```julia
-] add https://github.com/fatimelbah/fatimelbah/SignalingToExperts.jl.git
+] add https://github.com/fatimelbah/SignalingToExperts.jl.git
 ```
 
 ## Showcase
