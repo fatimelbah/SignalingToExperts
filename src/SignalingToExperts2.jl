@@ -1,7 +1,7 @@
 module Signaling3
 export errmktclear_regions, equil_regions, f_regions, indif_regions
 
-#This file create the numerical simulation used to generate the right panel of figure 7
+#This file create the numerical simulations used to generate the right panel of figure 7
 function indif_regions(pi,cH)
         
     global cL, lambda
