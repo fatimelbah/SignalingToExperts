@@ -1,7 +1,7 @@
 module SignalingToExperts1
 export errmktclear_eegions_1, equil_regions_1, f_regions, indif_regions_1
 
-#This file create the numerical simulation used to generate the left panel of figure 7
+#This file create the numerical simulations used to generate the left panel of figure 7
 
 
 function indif_regions_1(pi,cH)
