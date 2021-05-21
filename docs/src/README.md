@@ -1,6 +1,6 @@
 # Computational Economics : Final Project 
 
-### Group : Fatimetou El Bah, Veronika Micudova
+### Group : Fatimetou El Bah and Veronika Micudova
 
 ### Paper : Signaling to Experts (Pablo Kurlat and Florian Scheuer, 2017)
 
